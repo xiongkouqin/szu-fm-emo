@@ -1,0 +1,6 @@
+/* YourStyleSheet.css */
+.bold-bordered {
+    font-weight: bold;       /* 文本加粗 */
+    max-width: 300px;        /* 限制最大宽度（如果需要） */
+
+}

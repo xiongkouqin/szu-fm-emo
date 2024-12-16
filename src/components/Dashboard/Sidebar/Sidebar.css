@@ -1,0 +1,78 @@
+.sidebar {
+    width: 150px; /* 展开时的宽度 */
+    background-color: #262626; /* Ant Design暗色主题颜色 */
+    color: white;
+    position: fixed; /* 侧边栏固定定位 */
+    height: 100%;
+    top: 0;
+    left: 0;
+    transition: transform 0.3s, box-shadow 0.3s; /* 平滑过渡效果 */
+    transform: translateX(-150px); /* 默认侧边栏隐藏在左侧，使用translateX(-150px)匹配宽度 */
+    z-index: 1000; /* 确保侧边栏在最上层 */
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.3); /* 添加阴影效果 */
+    border-top-right-radius: 5px; /* 添加圆角 */
+    border-bottom-right-radius: 5px; /* 添加圆角 */
+}
+
+.sidebar:not(.collapsed) {
+    transform: translateX(0); /* 展开时侧边栏显示 */
+    box-shadow: 5px 0 15px rgba(0, 0, 0, 0.5); /* 展开时增加阴影效果 */
+}
+
+.toggle-button {
+    background-color: #1890ff; /* Ant Design主色 */
+    color: white;
+    border: none;
+    padding: 10px 20px; /* 增加一些内边距 */
+    width: auto; /* 让按钮宽度自适应内容 */
+    text-align: left;
+    cursor: pointer;
+    transition: background-color 0.3s; /* 添加背景颜色过渡效果 */
+}
+
+.toggle-button:hover {
+    background-color: #147fd7; /* 鼠标悬停时改变背景颜色 */
+}
+
+.sidebar nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar nav ul li {
+    position: relative;
+    border-bottom: 1px solid #333; /* 添加分隔线 */
+}
+
+.sidebar nav ul li a {
+    display: block;
+    padding: 10px 20px; /* 增加一些内边距 */
+    color: white;
+    text-decoration: none;
+    transition: background-color 0.3s; /* 添加背景颜色过渡效果 */
+}
+
+.sidebar nav ul li a:hover {
+    background-color: #333; /* 鼠标悬停时改变背景颜色 */
+}
+
+.sidebar nav ul li ul.submenu {
+    display: none;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar nav ul li:hover ul.submenu {
+    display: block;
+    position: absolute;
+    left: 150px; /* 与侧边栏宽度一致 */
+    top: 0;
+    background-color: #262626; /* 与侧边栏背景颜色一致 */
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.3); /* 添加阴影效果 */
+}
+
+.submenu.hidden {
+    display: none !important;
+}

@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="test-data2">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/node_modules/.pnpm/react-file-viewer@1.2.1_react-dom@18.2.0_react@18.2.0__react@18.2.0_webpack@2.7.0/node_modules/mammoth/test/test-data/empty.zip!/" />
+      <root url="jar://$PROJECT_DIR$/node_modules/.pnpm/react-file-viewer@1.2.1_react-dom@18.2.0_react@18.2.0__react@18.2.0_webpack@2.7.0/node_modules/mammoth/test/test-data/hello.zip!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
